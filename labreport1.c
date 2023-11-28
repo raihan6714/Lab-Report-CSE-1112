@@ -1,24 +1,31 @@
 #include <stdio.h>
 
-float add() {
+float add() 
+{
   printf("performing addition\n");
   float a, b;
   scanf("%f%f", & a, & b);
   return a + b;
 }
-float sub() {
+
+float sub() 
+{
   printf("performing subtraction\n");
   float a, b;
   scanf("%f%f", & a, & b);
   return a - b;
 }
-float mul() {
+
+float mul() 
+{
   printf("performing multiplication\n");
   float a, b;
   scanf("%f%f", & a, & b);
   return a * b;
 }
-float div() {
+
+float div() 
+{
   printf("performing division\n");
   float a, b;
   scanf("%f%f", & a, & b);
@@ -28,13 +35,17 @@ float div() {
     return a / b;
   }
 }
-int rem() {
+
+int rem() 
+{
   printf("performing reminder\n");
   int a, b;
   scanf("%d%d", & a, & b);
   return a % b;
 }
-float squ() {
+
+float squ() 
+{
   printf("performing square\n");
   float a;
   scanf("%f", & a);
@@ -42,7 +53,9 @@ float squ() {
   b = a * a;
   return b;
 }
-float cub() {
+
+float cub() 
+{
   printf("performing cube\n");
   float a;
   scanf("%f", & a);
@@ -50,7 +63,9 @@ float cub() {
   b = (a * a) * a;
   return b;
 }
-int main() {
+
+int main() 
+{
     printf("Enter how many times do you want this calculator to work\n");
     int x;
     scanf("%d", & x);
@@ -85,4 +100,4 @@ int main() {
       }
       printf("\nOpps memory is full!! Try relaunching the program\n");
       return 0;
-    }
+}
